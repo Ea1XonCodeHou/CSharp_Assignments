@@ -1,0 +1,87 @@
+# Visual Studio 临时文件
+.vs/
+*_i.c
+*_p.c
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 构建结果
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 缓存/选项目录
+.vs/
+.vscode/
+*/.vs/
+*/.vscode/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet 包
+*.nupkg
+# NuGet Symbol 包
+*.snupkg
+# 如果你想忽略NuGet包文件夹，取消下面的注释
+# **/[Pp]ackages/*
+# 但保留包含包的manifest的文件夹
+# !**/[Pp]ackages/build/
+
+# Visual Studio 项目文件
+*.vbproj
+*.vcxproj
+*.vcxproj.filters
+*.dbproj
+*.fsproj
+*.lsproj
+*.wixproj
+*.modelproj
+*.sqlproj
+*.wmaproj
+*.xproj
+*.pyproj
+*.bak
+*.cache
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# 其他文件
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
