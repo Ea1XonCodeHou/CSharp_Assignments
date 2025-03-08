@@ -1,0 +1,30 @@
+# Visual Studio 文件夹
+.vs/
+
+# 编译输出文件夹
+bin/
+obj/
+
+# 用户特定文件（不需要提交到 Git）
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 依赖项缓存
+packages/
+node_modules/
+
+# 生成的程序集和日志文件
+*.dll
+*.exe
+*.pdb
+*.log
+
+# Visual Studio Code 工作区配置
+.vscode/
+
+# 其他临时文件
+*.tmp
+*.cache
+*.ide
