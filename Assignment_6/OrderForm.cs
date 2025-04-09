@@ -1,7 +1,6 @@
 using System;
 using System.Windows.Forms;
-using Assignment_5.model;
-using Assignment_5.common;
+using Assignment_6.Models;
 
 namespace Assignment_6
 {
@@ -96,21 +95,17 @@ namespace Assignment_6
                 return;
             }
 
-            var detail = (OrderDetail)dgvDetails.CurrentRow.DataBoundItem;
-            try
+            var detail = dgvDetails.CurrentRow.DataBoundItem as OrderDetail;
+            if (detail != null)
             {
-                Order.RemoveDetail(detail.ProductName);
+                Order.RemoveDetail(detail);
                 detailBindingSource.ResetBindings(false);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCustomerName.Text))
+            if (string.IsNullOrWhiteSpace(Order.CustomerName))
             {
                 MessageBox.Show("请输入客户名称", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -118,7 +113,7 @@ namespace Assignment_6
 
             if (Order.Details.Count == 0)
             {
-                MessageBox.Show("请至少添加一个订单明细", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("请添加至少一个订单明细", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

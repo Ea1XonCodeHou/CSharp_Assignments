@@ -1,8 +1,7 @@
 using System;
 using System.Windows.Forms;
-using Assignment_5.model;
-using Assignment_5.service;
-using Assignment_5.common;
+using Assignment_6.Models;
+using Assignment_6.Services;
 
 namespace Assignment_6
 {
